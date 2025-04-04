@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!-- (1) The root element name is Hotel, instead of Hotels -->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	<Hotel Rating="4.2">
+	<Name>Westin</Name>
+	<Phone>480-968-8885</Phone>
+	<Phone>800-937-8461</Phone>
+	<Address NearstAirport="Sky Harbor">
+		<Number>11</Number>
+		<Street>E.7th St</Street>
+		<City>Tempe</City>
+		<State>AZ</State>
+		<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+<!-- (2) A required attribute is missing; -->
+<Hotel Rating="4.5">
+	<Name>Hotel One</Name>
+	<Phone>859-111-1111</Phone>
+	<Address>
+		<Number>111</Number>
+		<Street>E. Washington St</Street>
+		<City>Tempe</City>
+		<State>AZ</State>
+		<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	
+	<!-- (3) A Phone element is missing on one of the hotels -->
+	<Hotel>
+		<Name>Hotel Two</Name>
+		<Address NearstAirport="Mesa Gateway">
+			<Number>222</Number>
+			<Street>E. University Dr</Street>
+			<City>Mesa</City>
+			<State>AZ</State>
+			<Zip>85213</Zip>
+		</Address>
+		</Hotel>
+	
+	<!-- (4) An Address elect has no closing tag -->
+	<Hotel Rating ="4.1">
+		<Name>Hotel Three</Name>
+		<Phone>859-333-3333</Phone>
+		<Address NearstAirport="Sky Harbor">
+			<Number>333</Number>
+			<Street>E. Washington St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+			</Hotel>
+
+	<!-- (5) Two names are provided for one of the hotels -->>
+	<Hotel Rating ="4.7">
+	<Name>Hotel Six</Name>
+	<Name>Hotel Fifteen</Name>
+	<Phone>859-666-6666</Phone>
+	<Address NearstAirport="Sky Harbor">
+		<Number>666</Number>
+		<Street>E.Crescent Moon Dr</Street>
+		<City>Scottsdale</City>
+		<State>AZ</State>
+		<Zip>85262</Zip>
+	</Address>
+	</Hotel>
+	
+	</Hotel>
