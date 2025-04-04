@@ -49,7 +49,7 @@
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
-			</Hotel>
+			</Address>
 
 	<!-- (5) Two names are provided for one of the hotels -->>
 	<Hotel Rating ="4.7">
